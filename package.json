@@ -1,0 +1,19 @@
+{
+  "name": "music-bot",
+  "version": "1.0.0",
+  "description": "Bot musique Discord local",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "@discordjs/voice": "^0.19.0",
+    "@distube/spotify": "^2.0.2",
+    "@snazzah/davey": "^0.1.7",
+    "discord.js": "^14.24.2",
+    "distube": "^5.0.7",
+    "dotenv": "^17.2.3",
+    "libsodium-wrappers": "^0.7.15"
+  },
+  "type": "commonjs"
+}
