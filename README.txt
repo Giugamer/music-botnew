@@ -21,7 +21,7 @@ Clean Spotify-like embeds and interactive control buttons 🟢
 
 Windows 10/11, Linux, or macOS
 
-Python 3.10+ (3.12+ recommended)
+node
 
 FFmpeg installed and added to your PATH
 
@@ -32,20 +32,9 @@ or install via winget:
 
 winget install ffmpeg
 
-2️⃣ Install dependencies
-
-In your bot’s folder, run:
-
-pip install -r requirements.txt
-
-
-If pip isn’t recognized:
-
-python -m pip install -r requirements.txt
-
 3️⃣ In the .env file
 
-Replace `your_discord_bot_token_here` with your token.:
+Replace `your` with your token.:
 
 ⚠️ Never share your Discord token publicly!
 You can find it on the Discord Developer Portal
@@ -55,36 +44,27 @@ You can find it on the Discord Developer Portal
 
 Run the following command:
 
-python bot.py
+node bot.js
 
 🎮 SLASH COMMANDS
 Command	Description
 /play [name]	Play an audio file from the /audio folder
-/pause	Pause the current track
-/resume	Resume playback
 /skip	Skip the current song
 /stop	Stop playback and clear the queue
 /queue	Display the current queue
-/clearqueue	Clear the queue
 /nowplaying	Show the currently playing song with progress
 /list	List all available audio files with duration
 /upload	Upload an audio file directly from Discord
-/playlist_create	Create a new playlist
-/playlist_add	Add a song to a playlist
-/playlist_list	Show all saved playlists
-/playlist_load	Load a playlist into the queue
-/playlist_delete	Delete a playlist
-/spam	Send multiple messages quickly (limit 10)
+/spam	Send multiple messages quickly (limit 20)
 🗂️ FOLDER STRUCTURE
 📁 your_bot_folder/
 │
-├── bot.py               ← Main bot code
-├── requirements.txt      ← List of dependencies
+├── bot.js                ← Main bot code
 ├── .env                  ← Your Discord bot token
-├── README.txt            ← This file (English)
-├── LISEZ_MOI.txt         ← French version
+├── README.txt            ← This file
 │
-├── 📁 audio/              ← Your music files (MP3, WAV, etc.)
+├── 📁node_module          ← Module for node
+├── 📁 music/              ← Your music files (MP3, m4a)
 └── 📁 playlists/          ← JSON playlists created by the bot
 
 💡 TIPS
@@ -99,12 +79,11 @@ If slash commands don’t appear, type / in Discord to refresh them.
 
 🚀 BOT DETAILS
 
-Name: Spotify++
+Name: 'insérer un nom de bot qui claque sa mere'
 
-Language: Python 3
+Language: Javascript
 
-Library: discord.py
+Version: 1.1
 
-Version: 2.5
 
 Author: [@giugamer]
